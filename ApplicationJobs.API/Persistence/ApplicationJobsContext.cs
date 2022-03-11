@@ -23,6 +23,7 @@ namespace ApplicationJobs.API.Persistence
       });
       builder.Entity<JobApplication>(e =>
       {
+
         e.HasKey(ja => ja.Id);
         //e.HasOne(ja => ja.JobVacancy).WithMany(jv => jv.Applications).HasForeignKey(jv => jv.Id);
       });
