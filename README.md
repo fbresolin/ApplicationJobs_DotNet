@@ -1,5 +1,5 @@
 # ApplicationJobs_DotNet
-Um site para aplicação de curriculos e disponibização de vagas de trabalho
+Uma aplicação para cadastro de curriculos e disponibização de vagas de trabalho
 
 Somente backend do site, foram usadas as tecnologias:
 O backend foi criado usando o framework .NET 4;
