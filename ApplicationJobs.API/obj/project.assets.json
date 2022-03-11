@@ -8110,11 +8110,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\breso\\Documents\\ApplicationJobs\\ApplicationJobs.API\\ApplicationJobs.csproj",
+      "projectUniqueName": "D:\\Users\\breso\\Documents\\ApplicationJob\\ApplicationJobs.API\\ApplicationJobs.csproj",
       "projectName": "ApplicationJobs",
-      "projectPath": "D:\\Users\\breso\\Documents\\ApplicationJobs\\ApplicationJobs.API\\ApplicationJobs.csproj",
+      "projectPath": "D:\\Users\\breso\\Documents\\ApplicationJob\\ApplicationJobs.API\\ApplicationJobs.csproj",
       "packagesPath": "C:\\Users\\breso\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\breso\\Documents\\ApplicationJobs\\ApplicationJobs.API\\obj\\",
+      "outputPath": "D:\\Users\\breso\\Documents\\ApplicationJob\\ApplicationJobs.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\breso\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -20,12 +20,6 @@ namespace ApplicationJobs.API.Persistence.Repositories
       _context.SaveChanges();
     }
 
-    public void AddApplication(JobApplication jobApplication)
-    {
-      _context.JobApplications.Add(jobApplication);
-      _context.SaveChanges();
-    }
-
     public List<JobVacancy> GetAll()
     {
       return _context.JobVacancies
@@ -33,7 +27,7 @@ namespace ApplicationJobs.API.Persistence.Repositories
         .ToList();
     }
 
-    public JobVacancy GetById(int id)
+    public JobVacancy? GetById(int id)
     {
       return _context.JobVacancies
         .Include(jv => jv.Applications)

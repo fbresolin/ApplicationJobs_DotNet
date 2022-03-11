@@ -17,6 +17,7 @@ builder.Services.AddDbContext<ApplicationJobsContext>(options =>
   options.UseInMemoryDatabase("ApplicationJobs"));
 
 builder.Services.AddScoped<IJobVacancyRepository, JobVacancyRepository>();
+builder.Services.AddScoped<IJobApplicationRepository, JobApplicationRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

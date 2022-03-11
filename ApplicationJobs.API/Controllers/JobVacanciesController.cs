@@ -2,10 +2,8 @@ namespace ApplicationJobs.API.Controllers
 {
   using ApplicationJobs.API.Entities;
   using ApplicationJobs.API.Models;
-  using ApplicationJobs.API.Persistence;
   using ApplicationJobs.API.Persistence.Repositories;
   using Microsoft.AspNetCore.Mvc;
-  using Microsoft.EntityFrameworkCore;
   using Serilog;
 
   [Route("api/job_vacancies")]

@@ -1,26 +1,40 @@
-namespace Name.Controllers
+namespace ApplicationJobs.API.Controllers
 {
   using ApplicationJobs.API.Entities;
   using ApplicationJobs.API.Models;
-  using ApplicationJobs.API.Persistence;
   using ApplicationJobs.API.Persistence.Repositories;
   using Microsoft.AspNetCore.Mvc;
 
-  [Route("api/job_vacancies/{id}/applications")]
+  [Route("api/job_vacancies/applications")]
   [ApiController]
   public class JobApplicationsController : ControllerBase
   {
-    private readonly IJobVacancyRepository _repository;
-    public JobApplicationsController(IJobVacancyRepository repository)
+    private readonly IJobApplicationRepository _repository;
+    private readonly IJobVacancyRepository _jvrepository;
+    public JobApplicationsController(IJobApplicationRepository repository,
+    IJobVacancyRepository jvrepository)
     {
       _repository = repository;
+      _jvrepository = jvrepository;
     }
 
-    //POST job_vacancies/{idJobVacancy}/applications
+    //GET job_vacancies/applications/{idJobVacancy}
+    [HttpGet("{id}")]
+    public IActionResult Get(int id)
+    {
+      var jobApplication = _repository.GetById(id);
+      if (jobApplication == null)
+      {
+        return NotFound();
+      }
+      return Ok(jobApplication);
+    }
+
+    //POST job_vacancies/applications
     [HttpPost]
     public IActionResult Post(int idJobVacancy, AddJobApplicationInputModel model)
     {
-      var jobVacancy = _repository.GetById(idJobVacancy);
+      var jobVacancy = _jvrepository.GetById(idJobVacancy);
       if (jobVacancy == null)
         return NotFound();
 

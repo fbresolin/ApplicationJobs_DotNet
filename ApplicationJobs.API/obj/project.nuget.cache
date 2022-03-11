@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PaSZBv3cPmrAaUGEXbAt7FEmcYTiQgATyFM8BxHlceih4+QjKO+SpA/EB5ndJBFD7H5pNxEHSys/a0Y/y4Yynw==",
+  "dgSpecHash": "gUXJQvCC8wqT5tENsjmsWpj3zBH3wZDQTSy9VgIqgjQrBjbUs8BC0Aus0VP8QTuouEpfwLvJKH1X2K8ziK4k0A==",
   "success": true,
-  "projectFilePath": "D:\\Users\\breso\\Documents\\ApplicationJobs\\ApplicationJobs.API\\ApplicationJobs.csproj",
+  "projectFilePath": "D:\\Users\\breso\\Documents\\ApplicationJob\\ApplicationJobs.API\\ApplicationJobs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\breso\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\breso\\.nuget\\packages\\microsoft.azure.services.appauthentication\\1.4.0\\microsoft.azure.services.appauthentication.1.4.0.nupkg.sha512",
